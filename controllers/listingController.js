@@ -7,7 +7,7 @@ const db = require('../models');
 router.get('/', (req, res) => {
     db.Listing.find({}, (err, foundListing) => {
         if (err) return console.log(err);
-        res.json(foundListing)
+        res.json(foundListing);
     });
 });
 

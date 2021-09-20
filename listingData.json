@@ -1,0 +1,28 @@
+{
+    "listings": [
+        {
+            "title": "Opening in the Bend",
+            "description": "Cozy student housing",
+            "price": 616,
+            "street_address": "1511 Glenlake Dr",
+            "city": "South Bend, IN",
+            "pictures":[]
+        },
+        {
+            "title": "Sky Line Views",
+            "description": "Beautful loft style apartment on the coast.",
+            "price": 1023,
+            "street_address": "5000 N Marine Dr",
+            "city": "Chicago, IL",
+            "pictures":[]
+        },
+        {
+            "title": "Down Under Living",
+            "description": "beautiful southern views",
+            "price": 1776,
+            "city": "Dallas, TX",
+            "pictures":[]
+        }
+
+    ]
+}

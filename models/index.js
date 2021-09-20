@@ -4,16 +4,17 @@ const mongoose = require('mongoose')
 const connectionString =  process.env.MONGODB_URI || 'mongodb://localhost:27017/roo';
 
 // Fire off the connection to Mongo DB
-mongoose.connect(connectionString, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false
-  });
+const configOptions = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+};
 
-  mongoose.connection.on('connected', () => {
-    console.log(`Mongoose connected to ${connectionString}`);
-  });
+// Connects to MongoDB
+mongoose.connect(connectionString, configOptions)
+  .then(() => console.log('You\'ve got data!'))
+  .catch((err) => console.log(`MongoDB connection error: ${err}`));
+
+  
 
   module.exports = {
       Listing: require('./Listing.js')

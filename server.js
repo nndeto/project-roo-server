@@ -4,7 +4,7 @@ const rowdy = require('rowdy-logger') //helps us visually see our routes
 
 
 //DB and Models
-
+const listingController = require('./controllers/listingController.js')
 
 
 //Configuration
@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json()); 
 
 //Controllers
-
+app.use('/listings', listingController);
 
 //checking turned on port
 app.listen(port, () => {

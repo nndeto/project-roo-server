@@ -7,6 +7,7 @@ const listingSchema = new Schema({
     price: Number,
     street_address: String,
     city: String,
+    state: String,
     pictures: [String],
     //lister --> will reference user model    
 })

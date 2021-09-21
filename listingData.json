@@ -5,7 +5,17 @@
             "description": "Cozy student housing",
             "price": 616,
             "street_address": "1511 Glenlake Dr",
-            "city": "South Bend, IN",
+            "city": "South Bend",
+            "state": "IN",
+            "pictures":[]
+        },
+        {
+            "title": "Vacancy in the Bend",
+            "description": "Cozy professor housing",
+            "price": 616,
+            "street_address": "1511 Glenlake Dr",
+            "city": "South Bend",
+            "state": "IN",
             "pictures":[]
         },
         {
@@ -13,14 +23,33 @@
             "description": "Beautful loft style apartment on the coast.",
             "price": 1023,
             "street_address": "5000 N Marine Dr",
-            "city": "Chicago, IL",
+            "city": "Chicago",
+            "state": "IL",
+            "pictures":[]
+        },
+        {
+            "title": "City Limits",
+            "description": "Beautful brownstone style apartment on the coast.",
+            "price": 1023,
+            "street_address": "5000 N Marine Dr",
+            "city": "Chicago",
+            "state": "IL",
+            "pictures":[]
+        },
+        {
+            "title": "Southern Living",
+            "description": "beautiful southern views",
+            "price": 1776,
+            "city": "Dallas",
+            "state": "TX",
             "pictures":[]
         },
         {
             "title": "Down Under Living",
             "description": "beautiful southern views",
             "price": 1776,
-            "city": "Dallas, TX",
+            "city": "Dallas",
+            "state": "TX",
             "pictures":[]
         }
 

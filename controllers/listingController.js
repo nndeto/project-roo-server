@@ -23,23 +23,33 @@ router.get('/:cityName', (req, res) => {
     })
 })
 
-//show route
-// router.get('/:id', (req,res) => {
-//     db.Listing.findById(req.params.id, (err,foundListing) => {
-//         if (err) return console.log(err);
-//         res.json(foundListing);
-//     });
-// });
+// show route for single listing
+router.get('/city/:listingId', (req,res) => {
+    db.Listing.findById(req.params.listingId, (err,foundListing) => {
+        if (err) return console.log(err);
+        res.json(foundListing);
+    });
+});
 
 //create route
 router.post('/', (req, res) => {
     db.Listing.create(req.body, (err, createdListing) => {
         if (err) return console.log(err);
-        console.log(req.body) //check
+        // console.log(req.body) //check
         res.json(createdListing);
     });
 });
 
 ///update and delete route coming soon
+
+
+//delete route
+router.delete('/:id', (req, res) => {
+    db.Listing.findByIdAndDelete(req.params.id, (err, deletedListing) => {
+        if (err) return console.log(err);
+        res.json("We deleted this." + deletedListing)
+    })
+})
+
 
 module.exports = router;

@@ -42,25 +42,29 @@ router.post('/', (req, res) => {
 
 ///update route 
 router.put('/:id', (req, res) => {
+    db.Listing.findById(req.params.id, (err, foundListing) => {
+        if (err) return console.log(err)
+        let foundPic = foundListing.pictures
+        console.log(req.body)
+        const newListing = 
+            {"title": req.body.title,
+            "description": req.body.description,
+            "price": req.body.price,
+            "street_address": req.body.street_address,
+            "city": req.body.city,
+            "state": req.body.state,
+            "pictures": [...foundPic, req.body.pictures]}
+        db.Listing.findByIdAndUpdate(
+            req.params.id,
+            newListing,
+            {new: true},
+            (err, updatedListing) => { 
+            if (err) return console.log(err);
+            res.json(updatedListing);
+          });
+    })
     //how do i get the current array in here as a variable to then update 
     //pictures with the spread operator
-    console.log(req.body)
-    const newListing = 
-        {"title": req.body.title,
-        "description": req.body.description,
-        "price": req.body.price,
-        "street_address": req.body.street_address,
-        "city": req.body.city,
-        "state": req.body.state,
-        "pictures": [...req.body.pictures]}
-    db.Listing.findByIdAndUpdate(
-        req.params.id,
-        newListing,
-        {new: true},
-        (err, updatedListing) => { 
-        if (err) return console.log(err);
-        res.json(updatedListing);
-      });
   });
 
 //delete route

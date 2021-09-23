@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express'); //calling in express our middleware middleman
 const cors = require('cors'); //the calling card between our front end and back end
 const rowdy = require('rowdy-logger') //helps us visually see our routes
@@ -21,23 +22,25 @@ app.use(session({ secret: process.env.SESSION_SECRET }));
 app.use('/listings', listingController);
 
 
-//user routes
+/////////USER routes
 //signup post route
 app.post('/signup', (req, res) => {
+    console.log("you hit me")
     console.log(req.body);
-    db.User.create(req.body, (err, createdUser) => {
-      if (err) console.log(err);
-      console.log(createdUser);
-      req.session.currentUser = createdUser;
-        res.json({
-            message: "You're signed up!"
-        });
-    });
+    // db.User.create(req.body, (err, createdUser) => {
+    //   if (err) console.log(err);
+    //   console.log(createdUser);
+    //   req.session.currentUser = createdUser;
+    //     res.json({
+    //         message: "You're signed up!"
+    //     });
+    // });
   })
 
   
 //login route to check if user exists
 app.post("/login", (req, res) => {
+    // console.log("you hit me")
     console.log(req.body);
     db.User.findOne({ username: req.body.username }, (err, foundUser) => {
       if (err) return console.log(err);
@@ -65,10 +68,6 @@ app.get('/logout', (req, res) => {
     console.log("you're logged out")
   })
   
-
-
-
-
 //checking turned on port
 app.listen(port, () => {
     console.log(`Finding you a roommate at ${port}.`)

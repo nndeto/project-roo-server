@@ -25,16 +25,16 @@ app.use('/listings', listingController);
 /////////USER routes
 //signup post route
 app.post('/signup', (req, res) => {
-    console.log("you hit me")
-    console.log(req.body);
-    // db.User.create(req.body, (err, createdUser) => {
-    //   if (err) console.log(err);
-    //   console.log(createdUser);
-    //   req.session.currentUser = createdUser;
-    //     res.json({
-    //         message: "You're signed up!"
-    //     });
-    // });
+    // console.log("you hit me")
+    // console.log(req.body);
+    db.User.create(req.body, (err, createdUser) => {
+      if (err) console.log(err);
+      console.log(createdUser);
+      req.session.currentUser = createdUser;
+        res.json({
+            message: "You're signed up!"
+        });
+    });
   })
 
   

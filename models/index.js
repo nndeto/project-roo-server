@@ -17,5 +17,6 @@ mongoose.connect(connectionString, configOptions)
   
 
   module.exports = {
-      Listing: require('./Listing.js')
+      Listing: require('./Listing.js'),
+      User: require('./User.js')
   }

@@ -9,7 +9,10 @@ const listingSchema = new Schema({
     city: String,
     state: String,
     pictures: [String],
-    //lister --> will reference user model    
+    lister: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+    }    
 })
 
 //Model

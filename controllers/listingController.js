@@ -41,11 +41,12 @@ router.post('/', (req, res) => {
 });
 
 ///update route 
+//had to find by id first to get found pic to be able to use the spread operator
 router.put('/:id', (req, res) => {
     db.Listing.findById(req.params.id, (err, foundListing) => {
         if (err) return console.log(err)
         let foundPic = foundListing.pictures
-        console.log(req.body)
+        // console.log(req.body)
         const newListing = 
             {"title": req.body.title,
             "description": req.body.description,
@@ -63,9 +64,8 @@ router.put('/:id', (req, res) => {
             res.json(updatedListing);
           });
     })
-    //how do i get the current array in here as a variable to then update 
-    //pictures with the spread operator
   });
+
 
 //delete route
 router.delete('/:id', (req, res) => {

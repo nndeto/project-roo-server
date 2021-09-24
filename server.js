@@ -56,9 +56,10 @@ app.post("/login", (req, res) => {
         });
       }
       req.session.currentUser = foundUser;
-      console.log(req.session);
+    //   foundUser = req.session.currentUser;
+      console.log(foundUser);
       res.json({
-          message: "You are logged in."
+          message: `${foundUser.name}`
       });
     });
   });

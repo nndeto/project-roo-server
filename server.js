@@ -7,6 +7,7 @@ const session = require('express-session');
 //DB and Models
 const listingController = require('./controllers/listingController.js')
 const db = require('./models/index.js');
+const e = require('express');
 
 //Configuration
 const port = 4000;
@@ -64,7 +65,19 @@ app.post("/login", (req, res) => {
 
 //find profile route
 app.get('/profile/:listerName', (req, res) => {
-    console.log(req)
+    // console.log(req.params.listerName)
+    //params must match their route name back here, regardless of what was passed back
+    db.User.findOne({name:req.params.listerName}, (err, foundUser) => {
+        // console.log(res)
+        if (err) return console.log(err);
+        if (foundUser) {
+            res.json(foundUser);
+        } else {
+            res.json({
+                message: "Not signed up."
+            });
+        }
+    })
 })
 
 //logout route to destroy session

@@ -30,10 +30,10 @@ app.post('/signup', (req, res) => {
     // console.log(req.body);
     db.User.create(req.body, (err, createdUser) => {
       if (err) console.log(err);
-      console.log(createdUser);
-      req.session.currentUser = createdUser;
+    //   console.log(createdUser);
+    //   req.session.currentUser = createdUser;
         res.json({
-            message: "You're signed up!"
+            createdUser
         });
     });
   })
@@ -58,7 +58,7 @@ app.post("/login", (req, res) => {
       req.session.currentUser = foundUser;
       console.log(req.session);
       res.json({
-          message: "You are logged in"
+          message: "You are logged in."
       });
     });
   });
@@ -71,8 +71,11 @@ app.get('/profile/:listerName', (req, res) => {
         // console.log(res)
         if (err) return console.log(err);
         if (foundUser) {
-            res.json(foundUser);
-        } else {
+            res.json({
+                message: "Welcome!",
+                foundUser
+            });
+        } else if (!foundUser) {
             res.json({
                 message: "Not signed up."
             });

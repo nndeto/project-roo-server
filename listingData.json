@@ -1,6 +1,7 @@
 {
     "listings": [
         {
+            "lister": "Abbey Lee",
             "title": "Opening in the Bend",
             "description": "Cozy student housing",
             "price": 616,
@@ -10,6 +11,7 @@
             "pictures":[]
         },
         {
+            "lister": "Ginger Snaps",
             "title": "Vacancy in the Bend",
             "description": "Cozy professor housing",
             "price": 616,
@@ -19,6 +21,7 @@
             "pictures":[]
         },
         {
+            "lister": "Violet Sky",
             "title": "Sky Line Views",
             "description": "Beautful loft style apartment on the coast.",
             "price": 1023,
@@ -28,6 +31,7 @@
             "pictures":[]
         },
         {
+            "lister": "Timothy Hoyt",
             "title": "City Limits",
             "description": "Beautful brownstone style apartment on the coast.",
             "price": 1023,
@@ -37,6 +41,7 @@
             "pictures":[]
         },
         {
+            "lister": "Lucy Rounds",
             "title": "Southern Living",
             "description": "beautiful southern views",
             "price": 1776,
@@ -45,6 +50,7 @@
             "pictures":[]
         },
         {
+            "lister": "Danny Way",
             "title": "Down Under Living",
             "description": "beautiful southern views",
             "price": 1776,

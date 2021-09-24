@@ -62,6 +62,11 @@ app.post("/login", (req, res) => {
     });
   });
 
+//find profile route
+app.get('/profile/:listerName', (req, res) => {
+    console.log(req)
+})
+
 //logout route to destroy session
 app.get('/logout', (req, res) => {
     req.session.destroy();

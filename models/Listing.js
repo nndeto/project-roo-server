@@ -2,17 +2,14 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const listingSchema = new Schema({
+    lister: String,    
     title: String,
     description: String,
     price: Number,
     street_address: String,
     city: String,
     state: String,
-    pictures: [String],
-    lister: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
-    }    
+    pictures: [String]
 })
 
 //Model

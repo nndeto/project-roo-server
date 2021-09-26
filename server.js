@@ -24,6 +24,17 @@ app.use('/listings', listingController);
 
 
 /////////USER routes
+//all users
+
+app.get('/', (req, res) => {
+  db.User.find({}, (err, foundUser) => {
+      if (err) return console.log(err);
+      res.json(foundUser);
+  });
+});
+
+
+
 //signup post route
 app.post('/signup', (req, res) => {
     // console.log("you hit me")
@@ -47,7 +58,7 @@ app.post("/login", (req, res) => {
       if (err) return console.log(err);
       if (!foundUser) {
         return res.json({
-            message: "Username  not found"
+            message: "Username not found"
         });
       }
       if (req.body.password !== foundUser.password) {

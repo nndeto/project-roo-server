@@ -3,61 +3,68 @@
         {
             "lister": "Abbey Lee",
             "title": "Opening in the Bend",
-            "description": "Cozy student housing",
+            "lister_pic": "",
+            "description": "Wayfarers kale chips mustache letterpress, cold-pressed humblebrag cred. Raw denim williamsburg four loko, photo booth schlitz thundercats leggings tilde heirloom. Fam la croix ethical austin brooklyn. Af air plant hot chicken, pabst retro sustainable plaid cred waistcoat. Kickstarter tumblr authentic, four dollar toast pickled succulents hashtag. Cronut palo santo butcher, put a bird on it readymade cornhole asymmetrical ennui.",
             "price": 616,
-            "street_address": "1511 Glenlake Dr",
+            "street_address": "1412 Ivy Rd",
             "city": "South Bend",
             "state": "IN",
-            "pictures":[]
+            "pictures":["https://i.imgur.com/g8q1g3wm.jpg", "https://i.imgur.com/07Jottym.jpg", "https://i.imgur.com/AFiEFpPm.jpg", "https://i.imgur.com/yNOz3Ekm.jpg" ]
         },
         {
             "lister": "Ginger Snaps",
-            "title": "Vacancy in the Bend",
-            "description": "Cozy professor housing",
-            "price": 616,
-            "street_address": "1511 Glenlake Dr",
+            "title": "Vacancy in Shared Housing",
+            "lister_pic": "",
+            "description": "Thundercats polaroid iceland pabst direct trade activated charcoal you probably haven't heard of them. Skateboard schlitz williamsburg cliche PBR&B knausgaard. Palo santo selvage sriracha, pinterest chicharrones snackwave bitters iceland disrupt four dollar toast pour-over brooklyn. Hoodie sustainable hella, normcore viral selfies chicharrones kickstarter next level butcher ennui YOLO chillwave.",
+            "price": 812,
+            "street_address": "1707 S Scott St",
             "city": "South Bend",
             "state": "IN",
-            "pictures":[]
+            "pictures":["https://i.imgur.com/IT8SyBCm.jpg", "https://i.imgur.com/tQx1wvxm.jpg", "https://i.imgur.com/dvDLLPfm.jpg"]
         },
         {
             "lister": "Violet Sky",
             "title": "Sky Line Views",
-            "description": "Beautful loft style apartment on the coast.",
+            "lister_pic": "",
+            "description": "Eiusmod flannel ramps, commodo sartorial deserunt food truck. Seitan chicharrones readymade, consequat live-edge schlitz hot chicken cillum. Reprehenderit salvia hell of etsy sriracha. Non poke salvia, blue bottle mollit you probably haven't heard of them duis cornhole hot chicken nisi ut yuccie consectetur venmo drinking vinegar.",
             "price": 1023,
-            "street_address": "5000 N Marine Dr",
+            "street_address": "261 Marcella Ln",
             "city": "Chicago",
             "state": "IL",
-            "pictures":[]
+            "pictures":["https://i.imgur.com/nfcYqvMm.jpg", "https://i.imgur.com/yR2HNKTm.jpg", "https://i.imgur.com/jklK8dWm.jpg"]
         },
         {
             "lister": "Timothy Hoyt",
-            "title": "City Limits",
-            "description": "Beautful brownstone style apartment on the coast.",
-            "price": 1023,
-            "street_address": "5000 N Marine Dr",
+            "title": "City High Rise",
+            "lister_pic": "",
+            "description": "Selvage normcore irure, culpa shaman laboris af biodiesel locavore. Tumeric glossier reprehenderit meh synth sed, exercitation umami semiotics single-origin coffee. Ethical post-ironic polaroid authentic pickled copper mug pitchfork YOLO ut mollit. Wayfarers next level nostrud, ut migas pariatur sartorial before they sold out hoodie post-ironic lumbersexual art party. Raclette pork belly messenger bag polaroid roof party. Freegan kombucha reprehenderit tilde yr tumblr, franzen pariatur wolf fingerstache cardigan laboris.",
+            "price": 1223,
+            "street_address": "411 E Grand Lake Blvd",
             "city": "Chicago",
             "state": "IL",
-            "pictures":[]
+            "pictures":["https://i.imgur.com/g8q1g3wm.jpg", "https://i.imgur.com/07Jottym.jpg", "https://i.imgur.com/AFiEFpPm.jpg", "https://i.imgur.com/yNOz3Ekm.jpg" ]
         },
         {
             "lister": "Lucy Rounds",
             "title": "Southern Living",
-            "description": "beautiful southern views",
+            "lister_pic": "",
+            "description": "Copper mug vape forage, ut viral godard gochujang. Tote bag salvia tofu semiotics single-origin coffee sustainable. Keytar consequat in schlitz, +1 leggings four loko cupidatat neutra selvage. +1 ex mollit fixie green juice cornhole tousled XOXO gluten-free deep v lo-fi vexillologist.",
             "price": 1776,
+            "street_address": "6363 W Camp Wisdom Rd",
             "city": "Dallas",
             "state": "TX",
-            "pictures":[]
+            "pictures":["https://i.imgur.com/IT8SyBCm.jpg", "https://i.imgur.com/tQx1wvxm.jpg", "https://i.imgur.com/dvDLLPfm.jpg"]
         },
         {
             "lister": "Danny Way",
             "title": "Down Under Living",
-            "description": "beautiful southern views",
-            "price": 1776,
+            "lister_pic": "",
+            "description": "Brooklyn occaecat bicycle rights esse kinfolk. Officia woke man bun, art party chartreuse kitsch whatever copper mug bespoke celiac. Hoodie truffaut cray, flannel do tofu four loko velit whatever kale chips kinfolk. Irure cred PBR&B, bushwick stumptown meditation bitters. Ullamco beard selvage hammock, magna viral kitsch occupy put a bird on it thundercats church-key keffiyeh wayfarers. Typewriter tacos art party, nostrud minim viral seitan.",
+            "price": 1456,
+            "street_address": "2435 Marfa Ave",
             "city": "Dallas",
             "state": "TX",
-            "pictures":[]
+            "pictures":["https://i.imgur.com/IT8SyBCm.jpg", "https://i.imgur.com/tQx1wvxm.jpg", "https://i.imgur.com/dvDLLPfm.jpg"]
         }
-
     ]
 }

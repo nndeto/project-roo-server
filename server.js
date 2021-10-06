@@ -7,10 +7,10 @@ const session = require('express-session');
 //DB and Models
 const listingController = require('./controllers/listingController.js')
 const db = require('./models/index.js');
-const e = require('express');
+// const e = require('express');
 
 //Configuration
-const port = 4000;
+const port = process.env.PORT || 4000;
 const app = express();
 const rowdyResults = rowdy.begin(app)
 app.use(cors());

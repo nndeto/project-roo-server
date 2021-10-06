@@ -1,3 +1,4 @@
+require('dotenv').config();
 const mongoose = require('mongoose')
 
 //roo is the name of our db
@@ -11,7 +12,7 @@ const configOptions = {
 
 // Connects to MongoDB
 mongoose.connect(connectionString, configOptions)
-  .then(() => console.log('You\'ve got data!'))
+  .then(() => console.log('You\'ve got data! ' + mongoose.connection.host + ': ' + mongoose.connection.port))
   .catch((err) => console.log(`MongoDB connection error: ${err}`));
 
   

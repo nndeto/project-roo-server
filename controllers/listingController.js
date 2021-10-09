@@ -40,10 +40,7 @@ router.post('/', (req, res) => {
         db.User.findOneAndUpdate({name: createdListing.lister}, 
             {$push: {posted_listing: createdListing}},
             (err, updatedUser) => {
-            if (err) return res.json(err);
-            if (!updatedUser) {
-                return
-            }
+            if (err) return console.log(err);
         })
         // console.log(req.body) //check
         res.json(createdListing);

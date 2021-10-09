@@ -41,6 +41,9 @@ router.post('/', (req, res) => {
             {$push: {posted_listing: createdListing}},
             (err, updatedUser) => {
             if (err) return console.log(err);
+            if (!updatedUser) {
+                return;
+            }
         })
         // console.log(req.body) //check
         res.json(createdListing);

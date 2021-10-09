@@ -10,7 +10,11 @@ const userSchema = new Schema({
     profile_pic: String,
     roommate_preferences: String,
     favorite_listings: [String], 
-    posted_listing: [String]
+    posted_listing: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Listing'
+  
+    }]
 })
 
 //Model

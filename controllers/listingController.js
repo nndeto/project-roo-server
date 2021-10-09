@@ -35,6 +35,16 @@ router.get('/city/:listingId', (req,res) => {
 router.post('/', (req, res) => {
     db.Listing.create(req.body, (err, createdListing) => {
         if (err) return console.log(err);
+
+        //to find the user and add the posted listing to them if so
+        db.User.findOneAndUpdate({name: createdListing.lister}, 
+            {$push: {posted_listing: createdListing}},
+            (err, updatedUser) => {
+            if (err) return res.json(err);
+            if (!updatedUser) {
+                return
+            }
+        })
         // console.log(req.body) //check
         res.json(createdListing);
     });

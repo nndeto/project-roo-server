@@ -9,7 +9,7 @@ const userSchema = new Schema({
     about: String,
     profile_pic: String,
     roommate_preferences: String,
-    favorite_listings: [], 
+    favorite_listings: [String], 
     posted_listing: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Listing'
